@@ -6,7 +6,7 @@ import (
 	"image/color"
 )
 
-func (receiver Slice) setColor(index uint8, r,g,b,a uint8) error {
+func (receiver Slice) SetColorRGBA(index uint8, r,g,b,a uint8) error {
 	if nil == receiver {
 		return errNilReceiver
 	}
@@ -28,6 +28,12 @@ func (receiver Slice) setColor(index uint8, r,g,b,a uint8) error {
 	return nil
 }
 
+func (receiver Slice) SetColorRGB(index uint8, r,g,b uint8) error {
+	a := uint8(255)
+
+	return receiver.SetColorRGBA(index, r,g,b,a)
+}
+
 func (receiver Slice) SetColor(index uint8, c color.Color) error {
 	if nil == receiver {
 		return errNilReceiver
@@ -40,5 +46,5 @@ func (receiver Slice) SetColor(index uint8, c color.Color) error {
 	b := uint8((bb*0xff)/0xffff)
 	a := uint8((aa*0xff)/0xffff)
 
-	return receiver.setColor(index, r,g,b,a)
+	return receiver.SetColorRGBA(index, r,g,b,a)
 }
