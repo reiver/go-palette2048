@@ -10,6 +10,12 @@ Online documentation, which includes examples, can be found at: http://godoc.org
 
 [![GoDoc](https://godoc.org/github.com/reiver/go-palette2048?status.svg)](https://godoc.org/github.com/reiver/go-palette2048)
 
+# Palettes
+
+Here are some palettes that can be used with this package:
+
+* https://github.com/reiver/go-palette2048_nes
+
 ## See Also
 Also see:
 
