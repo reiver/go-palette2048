@@ -14,6 +14,7 @@ Online documentation, which includes examples, can be found at: http://godoc.org
 
 Here are some palettes that can be used with this package:
 
+* https://github.com/reiver/go-palette2048_gruvbox
 * https://github.com/reiver/go-palette2048_nes
 * https://github.com/reiver/go-palette2048_solarized
 * https://github.com/reiver/go-palette2048_tia
